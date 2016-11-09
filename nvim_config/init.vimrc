@@ -14,7 +14,6 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-sensible'
 Plug 'travisjeffery/vim-auto-mkdir'
 
 " Editing
@@ -27,6 +26,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Text Object Selection
 Plug 'bkad/CamelCaseMotion'
