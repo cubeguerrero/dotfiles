@@ -16,6 +16,7 @@ source /usr/local/share/chruby/auto.sh
 
 # pyenv
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # nvm
 export NVM_DIR="/Users/cuthbertguerrero/.nvm"
