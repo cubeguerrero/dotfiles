@@ -25,7 +25,15 @@ data.location=~/.task
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-yellow-green.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-gray-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-gray-blue-256.theme
-#include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
+include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
+
+# Inthe.AM configuration
+taskd.certificate=/Users/cuthbertguerrero/Projects/personal/taskwarrior/private.certificate.pem
+taskd.key=/Users/cuthbertguerrero/Projects/personal/taskwarrior/private.key.pem
+taskd.ca=/Users/cuthbertguerrero/Projects/personal/taskwarrior/ca.cert.pem
+taskd.server=taskwarrior.inthe.am:53589
+taskd.credentials=inthe_am/cuthbert.guerrero/d709bfc9-fd69-4a1f-97ff-9106daa0b4c5
+taskd.trust=ignore hostname
 

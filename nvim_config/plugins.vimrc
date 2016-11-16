@@ -26,7 +26,7 @@ let g:neomake_javascript_standard_maker = {
 " Color scheme
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme base16-railscasts
 
 " use \ for fzf search
 if !exists(":Ag")

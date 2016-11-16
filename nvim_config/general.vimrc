@@ -63,3 +63,6 @@ set list listchars=tab:»·,trail:·,nbsp:·
 
 " Transparent Background
 hi Normal guibg=NONE ctermbg=NONE
+
+" Set 80 line number
+set cc=80
