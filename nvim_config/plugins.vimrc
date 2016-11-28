@@ -59,3 +59,6 @@ let g:airline#extensions#tabline#show_buffers = 0
 
 " on save, strip whitespace
 autocmd BufWritePre * StripWhitespace
+
+" filetype
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
