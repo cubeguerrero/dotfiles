@@ -29,3 +29,10 @@ alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 /usr/local/bin/nvim'
 # see: https://coderwall.com/p/-k_93g/mac-os-x-valueerror-unknown-locale-utf-8-in-python
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# ssh sessions are lost in tmux, the following will find any ssh-agent process
+# and set in the tmux session
+source ~/.ssh-find-agent/ssh-find-agent.bash
+if ! test $SSH_AUTH_SOCK; then
+    set_ssh_agent_socket
+f
