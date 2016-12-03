@@ -26,7 +26,7 @@ let g:neomake_javascript_standard_maker = {
 " Color scheme
 syntax on
 set background=dark
-colorscheme base16-railscasts
+colorscheme base16-eighties
 
 " use \ for fzf search
 if !exists(":Ag")
@@ -50,11 +50,7 @@ let g:jsx_ext_required = 0
 
 " Airline
 let g:airline_theme = 'solarized'
-
-" airline font
-let g:airline_powerline_fonts=1
-
-" tabline
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 0
 
 " on save, strip whitespace
