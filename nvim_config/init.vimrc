@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
-Plug 'chriskempson/base16-vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 
 " General
 Plug 'neomake/neomake'
