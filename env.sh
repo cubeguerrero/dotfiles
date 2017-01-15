@@ -18,6 +18,9 @@ source /usr/local/share/chruby/auto.sh
 export NVM_DIR="/Users/cuthbertguerrero/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+#yarn
+export PATH="$PATH:`yarn global bin`"
+
 # aliases
 alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 /usr/local/bin/nvim'
 alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 /usr/local/bin/nvim'

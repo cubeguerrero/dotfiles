@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
-Plug 'altercation/vim-colors-solarized'
+Plug 'jdkanani/vim-material-theme'
 Plug 'morhetz/gruvbox'
 
 " General
