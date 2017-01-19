@@ -64,4 +64,7 @@ Plug 'othree/csscomplete.vim'
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
 
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+
 call plug#end()
