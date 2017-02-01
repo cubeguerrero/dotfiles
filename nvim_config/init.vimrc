@@ -43,9 +43,6 @@ Plug 'othree/html5.vim'
 
 " Ruby | Rails
 Plug 'slim-template/vim-slim'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
 Plug 'vim-ruby/vim-ruby'
 
 " Javascript
