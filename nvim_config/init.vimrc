@@ -38,6 +38,9 @@ Plug 'myusuf3/numbers.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" HTML
+Plug 'othree/html5.vim'
+
 " Ruby | Rails
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-bundler'
