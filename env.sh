@@ -36,3 +36,6 @@ export LANG=en_US.UTF-8
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+## asdf ruby install
+export RUBY_EXTRA_CONFIGURE_OPTIONS='--with-openssl-dir=`brew --prefix openssl`'

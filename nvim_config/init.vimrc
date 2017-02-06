@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
-Plug 'jdkanani/vim-material-theme'
-Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
 " General
 Plug 'neomake/neomake'
@@ -46,14 +45,9 @@ Plug 'slim-template/vim-slim'
 Plug 'vim-ruby/vim-ruby'
 
 " Javascript
-Plug '1995eaton/vim-better-javascript-completion'
 Plug 'elzr/vim-json'
 Plug 'gavocanov/vim-js-indent'
-Plug 'guileen/vim-node-dict'
-Plug 'moll/vim-node'
 Plug 'mxw/vim-jsx'
-Plug 'othree/yajs.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pangloss/vim-javascript'
 
 " CSS | SCSS

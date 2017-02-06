@@ -23,10 +23,22 @@ let g:neomake_javascript_standard_maker = {
   \ 'errorformat': '  %f:%l:%c: %m'
   \ }
 
+let g:neomake_python_enabled_makers = ['flake8']
+let g:neomake_python_flake8_maker = {
+    \ 'args': ['--ignore=E221,E241,E272,E251,W702,E203,E201,E202',  '--format=default'],
+    \ 'errorformat':
+        \ '%E%f:%l: could not compile,%-Z%p^,' .
+        \ '%A%f:%l:%c: %t%n %m,' .
+        \ '%A%f:%l: %t%n %m,' .
+        \ '%-G%.%#',
+    \ }
+
 " Color scheme
 syntax on
 set background=dark
-colorscheme gruvbox
+colorscheme solarized
+hi Normal guibg=NONE ctermbg=NONE
+let g:enable_bold_font = 1
 
 " use \ for fzf search
 if !exists(":Ag")
@@ -49,7 +61,7 @@ let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:jsx_ext_required = 0
 
 " Airline
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'hybrid'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 0
 
