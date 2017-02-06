@@ -5,28 +5,18 @@ Plug 'altercation/vim-colors-solarized'
 " General
 Plug 'neomake/neomake'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'haya14busa/incsearch.vim'
-Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf.vim'
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
 Plug 'travisjeffery/vim-auto-mkdir'
 
 " Editing
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/vim-easy-align'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
-Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
-Plug 'ntpeters/vim-better-whitespace'
 
 " Text Object Selection
 Plug 'bkad/CamelCaseMotion'
