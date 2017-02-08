@@ -33,6 +33,9 @@ let g:neomake_python_flake8_maker = {
         \ '%-G%.%#',
     \ }
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Color scheme
 syntax on
 set background=dark
@@ -70,3 +73,4 @@ autocmd BufWritePre * StripWhitespace
 
 " filetype
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+

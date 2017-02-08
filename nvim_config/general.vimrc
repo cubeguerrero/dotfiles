@@ -66,3 +66,7 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " Set 80 line number
 set cc=80
+
+" Set comments italic
+highlight Comment gui=italic
+highlight htmlArg cterm=italic
