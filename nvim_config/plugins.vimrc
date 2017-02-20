@@ -37,11 +37,13 @@ let g:neomake_python_flake8_maker = {
 let g:deoplete#enable_at_startup = 1
 
 " Color scheme
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_contrast_dark = "hard"
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
-let g:enable_bold_font = 1
 
 " use \ for fzf search
 if !exists(":Ag")
@@ -64,7 +66,7 @@ let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:jsx_ext_required = 0
 
 " Airline
-let g:airline_theme = 'hybrid'
+let g:airline_theme = 'gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 0
 

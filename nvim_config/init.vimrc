@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
 Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 
 " General
 Plug 'neomake/neomake'
@@ -51,5 +52,7 @@ Plug 'neovimhaskell/haskell-vim'
 
 " Elixir
 Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+Plug 'slime-lang/vim-slime-syntax'
 
 call plug#end()
