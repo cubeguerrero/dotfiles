@@ -1,0 +1,12 @@
+[user]
+  name = Cuthbert Guerrero
+  email = cuthbert.guerrero@gmail.com
+[credential]
+  helper = osxkeychain
+[core]
+  editor = nvim
+[alias]
+  br = branch
+  co = checkout
+  cm = commit
+  aa = add .
