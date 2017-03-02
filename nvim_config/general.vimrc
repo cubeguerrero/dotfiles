@@ -70,3 +70,6 @@ set cc=80
 " Set comments italic
 highlight Comment gui=italic
 highlight htmlArg cterm=italic
+
+" Clipboard error in tmux
+set clipboard=unnamed

@@ -36,12 +36,10 @@ let g:neomake_python_flake8_maker = {
 let g:deoplete#enable_at_startup = 1
 
 " Color scheme
-let g:gruvbox_bold = 1
-let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = "hard"
+let base16colorspace=256
 syntax on
 set background=dark
-colorscheme gruvbox
+colorscheme base16-tomorrow-night
 hi Normal guibg=NONE ctermbg=NONE
 
 " delimitMate options
@@ -59,7 +57,7 @@ let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:jsx_ext_required = 0
 
 " Airline
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'base16color'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 0
 
