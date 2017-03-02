@@ -5,6 +5,7 @@ Plug 'morhetz/gruvbox'
 " General
 Plug 'neomake/neomake'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'travisjeffery/vim-auto-mkdir'

@@ -1,7 +1,6 @@
 filetype plugin indent on
 
 " fzf config
-set rtp+=~/.fzf
 let g:fzf_nvim_statusline = 0 " disable statusline overwriting
 
 " Neomake config
@@ -45,12 +44,6 @@ set background=dark
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 
-" use \ for fzf search
-if !exists(":Ag")
-  command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-  nnoremap \ :Ag<SPACE>
-endif
-
 " delimitMate options
 let delimitMate_expand_cr=1
 
@@ -86,4 +79,3 @@ autocmd BufWritePre * StripWhitespace
 
 " filetype
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
-
