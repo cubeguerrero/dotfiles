@@ -38,3 +38,4 @@ nnoremap <C-p> :Files<CR>
 " Personal
 nnoremap <C-n> :vnew<Space>
 nnoremap <leader>h :nohlsearch<CR>
+inoremap <C-c> <Esc>

@@ -47,7 +47,7 @@ set fileencoding=utf-8
 
 " Numbers
 set number
-set numberwidth=5
+set relativenumber
 
 set wildmode=list:longest,list:full
 
