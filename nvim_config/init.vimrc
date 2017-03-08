@@ -24,9 +24,9 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'michaeljsmith/vim-indent-object'
 
 " Eyecandy
-Plug 'myusuf3/numbers.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'dodie/vim-disapprove-deep-indentation'
 
 " HTML
 Plug 'othree/html5.vim'

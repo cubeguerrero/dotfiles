@@ -39,7 +39,7 @@ let g:deoplete#enable_at_startup = 1
 let base16colorspace=256
 syntax on
 set background=dark
-colorscheme base16-tomorrow-night
+colorscheme base16-monokai
 hi Normal guibg=NONE ctermbg=NONE
 
 " delimitMate options
@@ -77,3 +77,7 @@ autocmd BufWritePre * StripWhitespace
 
 " filetype
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+
+" vim indent disapproval
+let g:LookOfDisapprovalTabTreshold=0
+let g:LookOfDisapprovalSpaceTreshold=0
