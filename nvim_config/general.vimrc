@@ -73,3 +73,10 @@ highlight htmlArg cterm=italic
 
 " Clipboard error in tmux
 set clipboard=unnamed
+
+" setup netrw like NerdTree
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
