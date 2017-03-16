@@ -39,7 +39,7 @@ let g:deoplete#enable_at_startup = 1
 let base16colorspace=256
 syntax on
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-eighties
 hi Normal guibg=NONE ctermbg=NONE
 
 " delimitMate options
@@ -57,7 +57,7 @@ let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:jsx_ext_required = 0
 
 " Airline
-let g:airline_theme = 'base16color'
+let g:airline_theme = 'base16_eighties'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 0
 

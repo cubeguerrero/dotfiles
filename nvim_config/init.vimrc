@@ -40,6 +40,8 @@ Plug 'elzr/vim-json'
 Plug 'gavocanov/vim-js-indent'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'digitaltoad/vim-pug'
+
 
 " CSS | SCSS
 Plug 'cakebaker/scss-syntax.vim'
