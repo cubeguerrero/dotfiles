@@ -6,7 +6,6 @@ Plug 'chriskempson/base16-vim'
 Plug 'w0rp/ale'
 Plug 'thirtythreeforty/lessspace.vim'
 Plug 'travisjeffery/vim-auto-mkdir'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Git Integration
 Plug 'tpope/vim-fugitive'

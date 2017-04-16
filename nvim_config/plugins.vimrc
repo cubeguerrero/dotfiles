@@ -1,7 +1,8 @@
 filetype plugin indent on
 
 " Ale
-let g:ale_sign_column_always = 1
+let g:ale_lint_on_text_changed= 0
+let g:ale_lint_on_save= 1
 let g:ale_sign_error = '⨉'
 let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
@@ -12,9 +13,6 @@ syntax on
 set background=dark
 colorscheme base16-monokai
 hi Normal guibg=NONE ctermbg=NONE
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
 
 " fzf config
 let g:fzf_nvim_statusline = 0 " disable statusline overwriting
@@ -45,9 +43,6 @@ let b:surround_{char2nr("i")} = "{% if \1condition: \1 %}\r{% endif %}"
 let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
 let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
 let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
-
-" on save, strip whitespace
-autocmd BufWritePre * StripWhitespace
 
 " filetype
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
