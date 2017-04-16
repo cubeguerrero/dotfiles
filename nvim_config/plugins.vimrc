@@ -1,39 +1,10 @@
 filetype plugin indent on
 
-" fzf config
-let g:fzf_nvim_statusline = 0 " disable statusline overwriting
-
-" Neomake config
-let fileTypesToIgnoreForNeomake = ['haskell']
-autocmd! BufWritePost * if index(fileTypesToIgnoreForNeomake, &ft) < 0 | Neomake | endif
-let g:neomake_error_sign = {
-  \ 'text': '✗',
-  \ 'texthl': 'Error',
-  \ }
-
-let g:neomake_warning_sign = {
-  \ 'text': '⚠',
-  \ 'texthl': 'Error',
-  \ }
-
-let g:neomake_javascript_enabled_makers = ['standard']
-let g:neomake_javascript_standard_maker = {
-  \ 'args': ['-f', 'compact', '--parser', 'babel-eslint', '-v'],
-  \ 'errorformat': '  %f:%l:%c: %m'
-  \ }
-
-let g:neomake_python_enabled_makers = ['flake8']
-let g:neomake_python_flake8_maker = {
-    \ 'args': ['--ignore=E221,E241,E272,E251,W702,E203,E201,E202',  '--format=default'],
-    \ 'errorformat':
-        \ '%E%f:%l: could not compile,%-Z%p^,' .
-        \ '%A%f:%l:%c: %t%n %m,' .
-        \ '%A%f:%l: %t%n %m,' .
-        \ '%-G%.%#',
-    \ }
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
+" Ale
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '⨉'
+let g:ale_sign_warning = '⚠'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Color scheme
 let base16colorspace=256
@@ -42,8 +13,11 @@ set background=dark
 colorscheme base16-monokai
 hi Normal guibg=NONE ctermbg=NONE
 
-" delimitMate options
-let delimitMate_expand_cr=1
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
+" fzf config
+let g:fzf_nvim_statusline = 0 " disable statusline overwriting
 
 " haskell-vim
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
@@ -77,7 +51,3 @@ autocmd BufWritePre * StripWhitespace
 
 " filetype
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
-
-" vim indent disapproval
-let g:LookOfDisapprovalTabTreshold=0
-let g:LookOfDisapprovalSpaceTreshold=0

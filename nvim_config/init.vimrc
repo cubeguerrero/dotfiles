@@ -3,17 +3,23 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'chriskempson/base16-vim'
 
 " General
-Plug 'neomake/neomake'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
+Plug 'thirtythreeforty/lessspace.vim'
 Plug 'travisjeffery/vim-auto-mkdir'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
+" Git Integration
+Plug 'tpope/vim-fugitive'
+
+" Fuzzy File Finding
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Navigation
+Plug 'christoomey/vim-tmux-navigator'
+
 " Editing
 Plug 'airblade/vim-gitgutter'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
@@ -26,7 +32,6 @@ Plug 'michaeljsmith/vim-indent-object'
 " Eyecandy
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dodie/vim-disapprove-deep-indentation'
 
 " HTML
 Plug 'othree/html5.vim'
