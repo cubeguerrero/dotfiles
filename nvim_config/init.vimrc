@@ -52,9 +52,6 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/csscomplete.vim'
 
-" Haskell
-Plug 'neovimhaskell/haskell-vim'
-
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
