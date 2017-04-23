@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# zsh completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 

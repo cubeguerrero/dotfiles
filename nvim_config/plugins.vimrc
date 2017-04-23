@@ -11,7 +11,7 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let base16colorspace=256
 syntax on
 set background=dark
-colorscheme base16-monokai
+colorscheme base16-eighties
 hi Normal guibg=NONE ctermbg=NONE
 
 " fzf config

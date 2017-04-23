@@ -4,7 +4,7 @@ Plug 'chriskempson/base16-vim'
 
 " General
 Plug 'w0rp/ale'
-Plug 'thirtythreeforty/lessspace.vim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'travisjeffery/vim-auto-mkdir'
 
 " Git Integration
