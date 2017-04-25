@@ -38,8 +38,6 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-
-# asdf ruby install
 export RUBY_EXTRA_CONFIGURE_OPTIONS='--with-openssl-dir=`brew --prefix openssl`'
 
 # Pyenv
