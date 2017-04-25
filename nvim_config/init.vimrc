@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
-Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 
 " General
 Plug 'w0rp/ale'
@@ -14,6 +14,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Autocompletion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " Navigation
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -25,12 +28,10 @@ Plug 'tpope/vim-repeat'
 Plug 'tomtom/tcomment_vim'
 
 " Text Object Selection
-Plug 'bkad/CamelCaseMotion'
 Plug 'michaeljsmith/vim-indent-object'
 
 " Eyecandy
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 " HTML
 Plug 'othree/html5.vim'
@@ -45,7 +46,6 @@ Plug 'gavocanov/vim-js-indent'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'digitaltoad/vim-pug'
-
 
 " CSS | SCSS
 Plug 'cakebaker/scss-syntax.vim'

@@ -25,6 +25,8 @@ nnoremap <leader>r :runininteractiveshell<space>
 " fzf commands
 nnoremap <C-p> :Files<CR>
 
+" Ag
+nnoremap \ :Ag<SPACE>
 " Personal
 nnoremap <C-n> :vnew<Space>
 nnoremap <leader>h :nohlsearch<CR>

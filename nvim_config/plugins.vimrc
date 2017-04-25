@@ -1,5 +1,8 @@
 filetype plugin indent on
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Ale
 let g:ale_lint_on_text_changed= 0
 let g:ale_lint_on_save= 1
@@ -8,10 +11,9 @@ let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Color scheme
-let base16colorspace=256
 syntax on
 set background=dark
-colorscheme base16-eighties
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 
 " fzf config
@@ -20,10 +22,38 @@ let g:fzf_nvim_statusline = 0 " disable statusline overwriting
 " JS
 let g:jsx_ext_required = 0
 
-" Airline
-let g:airline_theme = 'base16_tomorrow'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#show_buffers = 0
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'filename' ] ]
+      \ },
+      \ 'component_function': {
+      \   'fugitive': 'LightlineFugitive',
+      \   'modified': 'LightlineModified'
+      \ }
+      \ }
+
+function! LightlineModified()
+  if &filetype == "help"
+    return ""
+  elseif &modified
+    return "+"
+  elseif &modifiable
+    return ""
+  else
+    return ""
+  endif
+endfunction
+
+function! LightlineFugitive()
+  if exists("*fugitive#head")
+    let branch = fugitive#head()
+    return branch !=# '' ? branch : ''
+  endif
+  return ''
+endfunction
 
 " Vim Surround
 "" Django
