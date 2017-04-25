@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
-Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 
 " General
 Plug 'w0rp/ale'
@@ -29,8 +29,7 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'michaeljsmith/vim-indent-object'
 
 " Eyecandy
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 " HTML
 Plug 'othree/html5.vim'

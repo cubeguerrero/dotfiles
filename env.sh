@@ -44,6 +44,5 @@ export LANG=en_US.UTF-8
 ## asdf ruby install
 export RUBY_EXTRA_CONFIGURE_OPTIONS='--with-openssl-dir=`brew --prefix openssl`'
 
-# base16-shell
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+## Gruvbox
+source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
