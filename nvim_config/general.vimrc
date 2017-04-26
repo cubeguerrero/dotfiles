@@ -11,6 +11,11 @@ set incsearch
 set laststatus=2
 set autowrite
 
+" Neovim >= 1.5 or Vim >= 8.0
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 augroup vimrcEx
   autocmd!
 

@@ -27,10 +27,6 @@ export NVM_DIR="/Users/cuthbertguerrero/.nvm"
 #yarn
 export PATH="$PATH:`yarn global bin`"
 
-# aliases
-alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 /usr/local/bin/nvim'
-alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 /usr/local/bin/nvim'
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'
