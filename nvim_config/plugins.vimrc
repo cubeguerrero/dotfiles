@@ -12,9 +12,7 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Color scheme
 syntax on
-set background=dark
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
+colorscheme dracula
 
 " fzf config
 let g:fzf_nvim_statusline = 0 " disable statusline overwriting
@@ -24,7 +22,7 @@ let g:jsx_ext_required = 0
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'Dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'filename' ] ]

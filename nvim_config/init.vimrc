@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 " Color Schemes
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim'
 
 " General
 Plug 'w0rp/ale'
