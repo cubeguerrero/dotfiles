@@ -34,6 +34,7 @@ Plug 'michaeljsmith/vim-indent-object'
 
 " Eyecandy
 Plug 'itchyny/lightline.vim'
+Plug 'daviesjamie/vim-base16-lightline'
 
 " HTML
 Plug 'othree/html5.vim'

@@ -10,15 +10,16 @@ let g:ale_sign_error = '⨉'
 let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
-" Color scheme
-syntax on
-colorscheme dracula
-
 " fzf config
 let g:fzf_nvim_statusline = 0 " disable statusline overwriting
 
 " JS
 let g:jsx_ext_required = 0
+
+" Colorscheme
+set termguicolors
+syntax on
+color dracula
 
 " Lightline
 let g:lightline = {

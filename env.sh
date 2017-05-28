@@ -3,9 +3,6 @@
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# Gruvbox
-source "$HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh"
-
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
@@ -48,3 +45,6 @@ export LANG=en_US.UTF-8
 
 # run pyenv-virtualenvwrapper
 eval "pyenv virtualenvwrapper"
+
+export TERM=screen-256color
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
