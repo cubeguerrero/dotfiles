@@ -1,17 +1,23 @@
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 ## This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
 shopt -s cdable_vars
 export dotfiles="$HOME/Projects/personal/dotfiles"
-export projects="$HOME/Projects"
+export work_projects="$HOME/Projects/work"
+export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
 
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # asdf
 . $HOME/.asdf/asdf.sh
@@ -24,7 +30,7 @@ function parse_git_branch() {
   if [ ! "${BRANCH}" == "" ]
   then
     STAT=`parse_git_dirty`
-    echo "[${BRANCH}${STAT}]"
+    echo ":[${BRANCH}${STAT}]"
   else
     echo ""
   fi
@@ -65,5 +71,5 @@ function parse_git_dirty {
   fi
 }
 
-export PS1="\W:\`parse_git_branch\` > "
+export PS1="\W\`parse_git_branch\` > "
 
