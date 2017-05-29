@@ -15,8 +15,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'dracula/vim'
-Plug 'itchyny/lightline.vim'
+Plug 'reedes/vim-colors-pencil'
+Plug 'vim-airline/vim-airline'
+
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -90,51 +91,22 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
-colorscheme dracula
+set background=light
+colorscheme pencil
 
 " Configuration for Plugins
-"" Ale
+" Ale
 let g:ale_lint_on_text_changed= 0
 let g:ale_lint_on_save= 1
 let g:ale_sign_error = '⨉'
 let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
+" Airline
+let g:airline_theme = 'pencil'
+
 " Vim-JavaScript
 let g:jsx_ext_required = 0
-
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'Dracula',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'filename' ] ]
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'LightlineFugitive',
-      \   'modified': 'LightlineModified'
-      \ }
-      \ }
-
-function! LightlineModified()
-  if &filetype == "help"
-    return ""
-  elseif &modified
-    return "+"
-  elseif &modifiable
-    return ""
-  else
-    return ""
-  endif
-endfunction
-
-function! LightlineFugitive()
-  if exists("*fugitive#head")
-    let branch = fugitive#head()
-    return branch !=# '' ? branch : ''
-  endif
-  return ''
-endfunction
 
 " Vim Surround
 "" Django
@@ -172,3 +144,6 @@ nnoremap <C-p> :Files<CR>
 
 " Ag
 nnoremap \ :Ag<SPACE>
+
+" Create new file
+nnoremap <C-n> :vnew<SPACE>
