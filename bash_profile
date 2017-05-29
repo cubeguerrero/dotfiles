@@ -1,6 +1,11 @@
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
 
+# bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
