@@ -1,4 +1,9 @@
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Customize Bash Prompt
 # get current branch in git repo
@@ -49,3 +54,4 @@ function parse_git_dirty {
 }
 
 export PS1="\W:\`parse_git_branch\` > "
+
