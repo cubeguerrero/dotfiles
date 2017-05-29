@@ -11,6 +11,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 
+" Tmux Integration
+Plug 'christoomey/vim-tmux-navigator'
+
 " Beautify
 Plug 'dracula/vim'
 Plug 'itchyny/lightline.vim'
@@ -29,6 +32,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
+Plug 'w0rp/ale'
 
 " HTML
 Plug 'othree/html5.vim'
