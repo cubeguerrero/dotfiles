@@ -1,6 +1,13 @@
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
 
+## This allows you to bookmark your favorite places across the file system
+# Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
+shopt -s cdable_vars
+export dotfiles="$HOME/Projects/personal/dotfiles"
+export projects="$HOME/Projects"
+export documents="$HOME/Documents"
+
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
