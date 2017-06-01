@@ -33,6 +33,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'w0rp/ale'
 
 " HTML
@@ -94,7 +95,7 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
-set background=light
+set background=dark
 colorscheme pencil
 
 " Configuration for Plugins
