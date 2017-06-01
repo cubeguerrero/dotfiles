@@ -1,5 +1,6 @@
 # vi
 *~
+*.swp
 
 # Node
 npm-debug.log
