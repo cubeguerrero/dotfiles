@@ -69,6 +69,9 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Split open below
+set splitbelow
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 

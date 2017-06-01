@@ -4,7 +4,8 @@
 [credential]
   helper = osxkeychain
 [core]
-  editor = nvim
+  editor = vim
+  excludesfile = /Users/cuthbertguerrero/.gitignore
 [alias]
   # Show verbose output about tags, branches or remotes
   tags = tag -l

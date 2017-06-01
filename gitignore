@@ -1,0 +1,8 @@
+# vi
+*~
+
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
