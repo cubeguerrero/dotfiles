@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 " Sensible Defaults
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
+Plug 'travisjeffery/vim-auto-mkdir'
 
 " Tmux Integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -17,7 +18,6 @@ Plug 'christoomey/vim-tmux-navigator'
 " Beautify
 Plug 'reedes/vim-colors-pencil'
 Plug 'vim-airline/vim-airline'
-
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
