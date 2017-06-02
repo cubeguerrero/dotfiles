@@ -41,15 +41,15 @@ This is a configuration file for a Firefox plugin called
 file is no longer being used.
 
 ### `ruby-version`
-Global configuration for (Chruby)[https://github.com/postmodern/chruby]. I'm now
+Global configuration for [Chruby]. I'm now
 using `asdf`.
 
 ### `tmux.conf`
 My tmux configuration, mostly adapted from 
-(Rico Sta. Cruz)[https://github.com/rstacruz] configuration.
+[Rico Sta. Cruz] configuration.
 
 ### `tool-versions`
-Configuration file for (`asdf`)[https://github.com/asdf-vm/asdf]
+Configuration file for [`asdf`]
 
 ### `vimrc`
 My basic configuration for Vim8. Still a work in progress.
@@ -66,3 +66,6 @@ Authored and maintained by Cuthbert Guerrero.
 > Twitter [@cubeguerrero](https://twitter.com/cubeguerrero)
 
 [MIT License]: http://mit-license.org/
+[`asdf`]: https://github.com/asdf-vim/asdf
+[Chruby]: https://github.com/postmodern/chruby
+[Rico Sta. Cruz]: https://github.com/rstacruz
