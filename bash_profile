@@ -30,6 +30,11 @@ if [ -f $HOME/.asdf/installs/python/3.6.1/bin/virtualenvwrapper.sh ]; then
   source $HOME/.asdf/installs/python/3.6.1/bin/virtualenvwrapper.sh
 fi
 
+# Mac OS X: ValueError: unknown locale: UTF-8 in Python
+# see: https://coderwall.com/p/-k_93g/mac-os-x-valueerror-unknown-locale-utf-8-in-python
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Customize Bash Prompt
 # get current branch in git repo
 function parse_git_branch() {
