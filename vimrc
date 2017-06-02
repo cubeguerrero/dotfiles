@@ -95,7 +95,7 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
-set background=light
+set background=dark
 colorscheme pencil
 
 " Configuration for Plugins
