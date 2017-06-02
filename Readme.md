@@ -63,5 +63,6 @@ Thanks
 Authored and maintained by Cuthbert Guerrero.
 
 > GitHub [@cubeguerrero](https://github.com/cubeguerrero) &nbsp;&middot;&nbsp;
+> Twitter [@cubeguerrero](https://twitter.com/cubeguerrero)
 
 [MIT License]: http://mit-license.org/
