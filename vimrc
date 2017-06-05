@@ -19,12 +19,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'reedes/vim-colors-pencil'
 Plug 'vim-airline/vim-airline'
 
-" Denite
-Plug 'Shougo/denite.nvim'
-
 " Fuzzy File Finding
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Git Integration
 Plug 'tpope/vim-git'
@@ -149,17 +146,8 @@ nnoremap <down> :echoe "use j"<cr>
 " Ag
 nnoremap \ :Ag<SPACE>
 
-" Denite
-call denite#custom#var('file_rec', 'command', ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
-call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
-call denite#custom#alias('source', 'file_rec/git', 'file_rec')
-call denite#custom#var('file_rec/git', 'command', ['git', 'ls-files', '-co', '--exclude-standard'])
-call denite#custom#filter('matcher_ignore_globs', 'ignore_globs', [ '.git/', '.ropeproject/', '__pycache__/', 'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
-call denite#custom#option('default', { 'prompt': '>', 'short_source_names': v:true })
-
 " Custom keymappings
-nnoremap <C-p> :Denite file_rec buffer<cr>
+nnoremap <C-p> :Files<cr>
 nnoremap <C-n> :vnew<SPACE>
 
 
