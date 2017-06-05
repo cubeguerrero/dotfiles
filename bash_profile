@@ -2,12 +2,14 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 export WORKON_HOME=~/.virtualenvs
 
 ## This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
 shopt -s cdable_vars
 export dotfiles="$HOME/Projects/personal/dotfiles"
+export blog="$HOME/Projects/personal/cubeguerrero.github.io"
 export work_projects="$HOME/Projects/work"
 export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
@@ -26,8 +28,8 @@ fi
 . $HOME/.asdf/completions/asdf.bash
 
 # virtualenvwrapper
-if [ -f $HOME/.asdf/installs/python/3.6.1/bin/virtualenvwrapper.sh ]; then
-  source $HOME/.asdf/installs/python/3.6.1/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 # Mac OS X: ValueError: unknown locale: UTF-8 in Python

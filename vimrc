@@ -19,9 +19,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'reedes/vim-colors-pencil'
 Plug 'vim-airline/vim-airline'
 
+" Denite
+Plug 'Shougo/denite.nvim'
+
 " Fuzzy File Finding
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
 
 " Git Integration
 Plug 'tpope/vim-git'
@@ -42,7 +45,7 @@ Plug 'othree/html5.vim'
 " CSS/SCSS
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'othree/csscomplete.vim'
+Plug 'rstacruz/vim-hyperstyle'
 
 " JavaScript
 Plug 'elzr/vim-json'
@@ -143,11 +146,20 @@ nnoremap <right> :echoe "use l"<cr>
 nnoremap <up> :echoe "use k"<cr>
 nnoremap <down> :echoe "use j"<cr>
 
-" FZF commands
-nnoremap <C-p> :Files<CR>
-
 " Ag
 nnoremap \ :Ag<SPACE>
 
-" Create new file
+" Denite
+call denite#custom#var('file_rec', 'command', ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
+call denite#custom#alias('source', 'file_rec/git', 'file_rec')
+call denite#custom#var('file_rec/git', 'command', ['git', 'ls-files', '-co', '--exclude-standard'])
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs', [ '.git/', '.ropeproject/', '__pycache__/', 'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+call denite#custom#option('default', { 'prompt': '>', 'short_source_names': v:true })
+
+" Custom keymappings
+nnoremap <C-p> :Denite file_rec buffer<cr>
 nnoremap <C-n> :vnew<SPACE>
+
+
