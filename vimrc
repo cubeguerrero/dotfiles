@@ -124,7 +124,7 @@ let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
 let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Key Configuration
-let mapleader = ","
+let mapleader = "\<SPACE>"
 
 function! InsertTabWrapper()
     let col = col('.') - 1
@@ -144,10 +144,19 @@ nnoremap <up> :echoe "use k"<cr>
 nnoremap <down> :echoe "use j"<cr>
 
 " Ag
-nnoremap \ :Ag<SPACE>
+
+" FZF
+nnoremap <C-p> :Files<cr>
+nnoremap <Leader>fb :Buffers<cr>
+nnoremap <Leader>fl :BLines<cr>
+nnoremap <Leader>fL :Lines<cr>
+nnoremap <Leader>fg :GFiles<cr>
+nnoremap <Leader>fG :GFiles?<cr>
+nnoremap <Leader>fc :Commits<cr>
+nnoremap <Leader>fs :Ag<SPACE>
+imap <c-x><c-l> <plug>(fzf-complete-line)
 
 " Custom keymappings
-nnoremap <C-p> :Files<cr>
 nnoremap <C-n> :vnew<SPACE>
 
 
