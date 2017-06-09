@@ -1,7 +1,7 @@
 " Vim Configuration for Vim8
 " Author: Cuthbert Guerrero
 " Contact: cuthbert.guerrero@gmail.com
-" Github: https://github.com/fatbotdesigns
+" Github: https://github.com/cubeguerrero
 
 " Start vim-plug
 " Install the plugins we're going to use
@@ -17,7 +17,8 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'reedes/vim-colors-pencil'
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -42,7 +43,6 @@ Plug 'othree/html5.vim'
 " CSS/SCSS
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'rstacruz/vim-hyperstyle'
 
 " JavaScript
 Plug 'elzr/vim-json'
@@ -64,6 +64,10 @@ Plug 'slime-lang/vim-slime-syntax'
 call plug#end()
 
 " General Configuration
+" Filetype plugin
+filetype plugin on
+filetype plugin indent on
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
@@ -122,6 +126,18 @@ let b:surround_{char2nr("i")} = "{% if \1condition: \1 %}\r{% endif %}"
 let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
 let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
 let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
 " Key Configuration
 let mapleader = "\<SPACE>"
