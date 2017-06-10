@@ -17,7 +17,6 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'reedes/vim-colors-pencil'
-" Plug 'vim-airline/vim-airline'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
