@@ -16,7 +16,7 @@ Plug 'travisjeffery/vim-auto-mkdir'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'reedes/vim-colors-pencil'
+Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
@@ -99,7 +99,7 @@ set clipboard=unnamed
 
 " Set colorscheme
 set background=dark
-colorscheme pencil
+colorscheme base16-onedark
 
 " Configuration for Plugins
 " Ale
@@ -128,7 +128,7 @@ let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': '16color',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -157,8 +157,6 @@ nnoremap <left> :echoe "use h"<cr>
 nnoremap <right> :echoe "use l"<cr>
 nnoremap <up> :echoe "use k"<cr>
 nnoremap <down> :echoe "use j"<cr>
-
-" Ag
 
 " FZF
 nnoremap <C-p> :Files<cr>
