@@ -59,6 +59,9 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 Plug 'slime-lang/vim-slime-syntax'
 
+" Solidity
+Plug 'tomlion/vim-solidity'
+
 " Initialize plugin system
 call plug#end()
 
