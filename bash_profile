@@ -12,6 +12,9 @@ export work_projects="$HOME/Projects/work"
 export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
 
+# Aliases
+alias wl='wunderline'
+
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
