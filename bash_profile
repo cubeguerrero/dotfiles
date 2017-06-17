@@ -13,7 +13,7 @@ export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
 
 # Aliases
-alias wl='wunderline'
+alias startpg='pg_ctl start'
 
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

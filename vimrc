@@ -12,6 +12,11 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'travisjeffery/vim-auto-mkdir'
 
+" Completion Framework
+Plug 'Shougo/neocomplete'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+
 " Tmux Integration
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -49,6 +54,7 @@ Plug 'gavocanov/vim-js-indent'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'digitaltoad/vim-pug'
+Plug 'mustache/vim-mustache-handlebars'
 
 " Ruby
 Plug 'slim-template/vim-slim'
@@ -140,6 +146,9 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+
+" Neocomplete
+
 
 " Key Configuration
 let mapleader = "\<SPACE>"

@@ -1,6 +1,6 @@
 elixir 1.4.4
 erlang 19.3
 ruby 2.4.1
-nodejs 7.10.0
+nodejs 8.1.1
 postgres 9.6.1
 python 3.6.1
