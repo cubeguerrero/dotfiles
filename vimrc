@@ -21,7 +21,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'chriskempson/base16-vim'
+Plug 'dracula/vim'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
@@ -107,8 +107,7 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
-set background=dark
-colorscheme base16-onedark
+colorscheme dracula
 
 " Configuration for Plugins
 " Ale
@@ -117,9 +116,6 @@ let g:ale_lint_on_save= 1
 let g:ale_sign_error = '⨉'
 let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
-
-" Airline
-let g:airline_theme = 'pencil'
 
 " Vim-JavaScript
 let g:jsx_ext_required = 0
@@ -137,7 +133,7 @@ let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': '16color',
+      \ 'colorscheme': 'Dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
