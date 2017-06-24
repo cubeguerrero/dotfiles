@@ -22,6 +22,8 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'dracula/vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'cocopon/lightline-hybrid.vim'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
@@ -107,7 +109,9 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
-colorscheme dracula
+set background=dark
+let g:hybrid_custom_term_colors = 1
+colorscheme hybrid
 
 " Configuration for Plugins
 " Ale
@@ -133,7 +137,7 @@ let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'Dracula',
+      \ 'colorscheme': 'hybrid',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
