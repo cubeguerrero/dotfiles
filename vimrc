@@ -25,6 +25,7 @@ Plug 'dracula/vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/indentLine'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -151,7 +152,7 @@ let g:lightline = {
 
 
 " Key Configuration
-let mapleader = "\<SPACE>"
+let mapleader = ","
 
 function! InsertTabWrapper()
     let col = col('.') - 1
