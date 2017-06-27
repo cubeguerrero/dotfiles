@@ -25,7 +25,6 @@ Plug 'dracula/vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'Yggdroot/indentLine'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -181,6 +180,9 @@ nnoremap <Leader>fG :GFiles?<cr>
 nnoremap <Leader>fc :Commits<cr>
 nnoremap <Leader>fs :Ag<SPACE>
 imap <c-x><c-l> <plug>(fzf-complete-line)
+
+" Fugitive Vim
+
 
 " Custom keymappings
 nnoremap <C-n> :vnew<SPACE>
