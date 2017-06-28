@@ -3,6 +3,11 @@ export CLICOLOR=1
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+## Include Mix Escripts to Path
+if [ -d "$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts" ] ; then
+  PATH="$PATH:$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts"
+fi
+
 ## This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
 shopt -s cdable_vars
