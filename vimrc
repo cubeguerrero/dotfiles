@@ -21,10 +21,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'dracula/vim'
 Plug 'vim-scripts/Solarized'
-Plug 'w0ng/vim-hybrid'
-Plug 'cocopon/lightline-hybrid.vim'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
@@ -72,6 +69,9 @@ Plug 'slime-lang/vim-slime-syntax'
 " Solidity
 Plug 'tomlion/vim-solidity'
 
+"Note Taking
+Plug 'vimwiki/vimwiki'
+
 " Initialize plugin system
 call plug#end()
 
@@ -111,6 +111,7 @@ highlight htmlArg cterm=italic
 set clipboard=unnamed
 
 " Set colorscheme
+syntax enable
 set background=dark
 let g:solarized_termcolors=16
 colorscheme solarized
