@@ -22,6 +22,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'dracula/vim'
+Plug 'vim-scripts/Solarized'
 Plug 'w0ng/vim-hybrid'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'itchyny/lightline.vim'
@@ -57,6 +58,7 @@ Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'digitaltoad/vim-pug'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'posva/vim-vue'
 
 " Ruby
 Plug 'slim-template/vim-slim'
@@ -110,8 +112,8 @@ set clipboard=unnamed
 
 " Set colorscheme
 set background=dark
-let g:hybrid_custom_term_colors = 1
-colorscheme hybrid
+let g:solarized_termcolors=16
+colorscheme solarized
 
 " Configuration for Plugins
 " Ale
@@ -137,7 +139,7 @@ let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'hybrid',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -182,9 +184,3 @@ nnoremap <Leader>fs :Ag<SPACE>
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
 " Fugitive Vim
-
-
-" Custom keymappings
-nnoremap <C-n> :vnew<SPACE>
-
-
