@@ -112,7 +112,6 @@ set clipboard=unnamed
 
 " Set colorscheme
 set background=dark
-let g:solarized_termcolors=16
 colorscheme solarized
 
 " Configuration for Plugins
