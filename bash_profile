@@ -3,10 +3,6 @@ export CLICOLOR=1
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-## Include Mix Escripts to Path
-if [ -d "$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts" ] ; then
-  PATH="$PATH:$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts"
-fi
 
 ## This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
@@ -18,7 +14,8 @@ export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
 
 # Aliases
-alias startpg='pg_ctl start'
+alias pgstart='pg_ctl start'
+alias brewit='brew update && brew upgrade && brew doctor'
 
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -36,6 +33,11 @@ fi
 # see: https://coderwall.com/p/-k_93g/mac-os-x-valueerror-unknown-locale-utf-8-in-python
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+## Include Mix Escripts to Path
+if [ -d "$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts" ] ; then
+  PATH="$PATH:$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts"
+fi
 
 # Bash Git Prompt
 # See: https://github.com/magicmonty/bash-git-prompt

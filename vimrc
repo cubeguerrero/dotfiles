@@ -22,6 +22,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'vim-scripts/Solarized'
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
 " Fuzzy File Finding
@@ -70,7 +71,8 @@ Plug 'slime-lang/vim-slime-syntax'
 Plug 'tomlion/vim-solidity'
 
 "Note Taking
-Plug 'vimwiki/vimwiki'
+Plug 'vim-scripts/utl.vim'
+Plug 'jceb/vim-orgmode'
 
 " Initialize plugin system
 call plug#end()
@@ -113,8 +115,7 @@ set clipboard=unnamed
 " Set colorscheme
 syntax enable
 set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
+colorscheme gruvbox
 
 " Configuration for Plugins
 " Ale
@@ -140,7 +141,7 @@ let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
