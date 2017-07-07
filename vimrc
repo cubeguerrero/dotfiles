@@ -117,6 +117,9 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
+" Highlight incsearch
+set hlsearch
+
 " Set colorscheme
 syntax enable
 set background=dark
@@ -132,17 +135,6 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Vim-JavaScript
 let g:jsx_ext_required = 0
-
-" Vim Surround
-"" Django
-let b:surround_{char2nr("v")} = "{{ \r }}"
-let b:surround_{char2nr("{")} = "{{ \r }}"
-let b:surround_{char2nr("%")} = "{% \r %}"
-let b:surround_{char2nr("b")} = "{% block \1block name: \1 %}\r{% endblock \1\1 %}"
-let b:surround_{char2nr("i")} = "{% if \1condition: \1 %}\r{% endif %}"
-let b:surround_{char2nr("w")} = "{% with \1with: \1 %}\r{% endwith %}"
-let b:surround_{char2nr("f")} = "{% for \1for loop: \1 %}\r{% endfor %}"
-let b:surround_{char2nr("c")} = "{% comment %}\r{% endcomment %}"
 
 " Lightline
 let g:lightline = {
@@ -179,6 +171,9 @@ nnoremap <right> :echoe "use l"<cr>
 nnoremap <up> :echoe "use k"<cr>
 nnoremap <down> :echoe "use j"<cr>
 
+" Set :nohls
+nnoremap <Leader>nh :nohls<cr>
+
 " FZF
 nnoremap <C-p> :Files<cr>
 nnoremap <Leader>fb :Buffers<cr>
@@ -188,6 +183,3 @@ nnoremap <Leader>fg :GFiles<cr>
 nnoremap <Leader>fG :GFiles?<cr>
 nnoremap <Leader>fc :Commits<cr>
 nnoremap <Leader>fs :Ag<SPACE>
-imap <c-x><c-l> <plug>(fzf-complete-line)
-
-" Fugitive Vim
