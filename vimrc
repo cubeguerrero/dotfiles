@@ -21,9 +21,9 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'vim-scripts/Solarized'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -111,6 +111,11 @@ highlight htmlArg cterm=italic
 
 " Clipboard error in tmux
 set clipboard=unnamed
+
+" Set special directory for .swp files
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 " Set colorscheme
 syntax enable
