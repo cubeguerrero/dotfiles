@@ -22,8 +22,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'morhetz/gruvbox'
+Plug 'reedes/vim-colors-pencil'
 Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'mikker/lightline-theme-pencil'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -88,7 +89,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-" Split open below
+" Better split defaults
+set splitright
 set splitbelow
 
 " Display extra whitespace
@@ -105,10 +107,6 @@ set relativenumber
 " Set 80 line number
 set cc=80
 
-" Set comments italic
-highlight Comment gui=italic
-highlight htmlArg cterm=italic
-
 " Clipboard error in tmux
 set clipboard=unnamed
 
@@ -122,8 +120,8 @@ set hlsearch
 
 " Set colorscheme
 syntax enable
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme pencil
 
 " Configuration for Plugins
 " Ale
@@ -138,7 +136,7 @@ let g:jsx_ext_required = 0
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'pencil',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -147,8 +145,6 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
-
-" Neocomplete
 
 
 " Key Configuration

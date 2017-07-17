@@ -8,14 +8,24 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
 shopt -s cdable_vars
 export dotfiles="$HOME/Projects/personal/dotfiles"
-export blog="$HOME/Projects/personal/cubeguerrero.github.io"
 export work_projects="$HOME/Projects/work"
 export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
+export notes="$HOME/Documents/personal/my-notes"
 
 # Aliases
-alias pgstart='pg_ctl start'
+## General stuff
 alias brewit='brew update && brew upgrade && brew doctor'
+alias pgstart='pg_ctl start'
+alias redisstart='redis-server --daemonize yes'
+
+## Mix
+alias xdp='mix deps.get'
+alias xec='mix ecto.create'
+alias xem='mix ecto.migrate'
+alias xes='mix ecto.setup'
+alias xis='xdp && npm install && xec && xem && xes'
+
 
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
