@@ -2,6 +2,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export CLICOLOR=1
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export NPM_PREFIX='npm get prefix'
 
 
 ## This allows you to bookmark your favorite places across the file system
@@ -12,6 +13,7 @@ export work_projects="$HOME/Projects/work"
 export personal_projects="$HOME/Projects/personal"
 export documents="$HOME/Documents"
 export notes="$HOME/Documents/personal/my-notes"
+export exer_elixir="$HOME/Projects/personal/exercism/elixir"
 
 # Aliases
 ## General stuff
@@ -26,6 +28,8 @@ alias xem='mix ecto.migrate'
 alias xes='mix ecto.setup'
 alias xis='xdp && npm install && xec && xem && xes'
 
+## Quick Fix for npm install -g
+alias jasmine='$HOME/.asdf/installs/nodejs/8.1.1/.npm/bin/jasmine'
 
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
