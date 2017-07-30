@@ -5,4 +5,4 @@
 --exclude=db/*
 --exclude=log/*
 --exclude=_build/*
---exlucde=deps/*
+--exclude=deps/*

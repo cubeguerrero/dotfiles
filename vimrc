@@ -21,10 +21,10 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'morhetz/gruvbox'
-Plug 'reedes/vim-colors-pencil'
+Plug 'dmcgrady/vim-lucario'
+Plug 'rakr/vim-one'
+Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
-Plug 'mikker/lightline-theme-pencil'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -120,8 +120,8 @@ set hlsearch
 
 " Set colorscheme
 syntax enable
-set background=light
-colorscheme pencil
+colorscheme solarized
+set background=dark
 
 " Configuration for Plugins
 " Ale
@@ -136,7 +136,7 @@ let g:jsx_ext_required = 0
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'pencil',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
