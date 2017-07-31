@@ -21,8 +21,6 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
-Plug 'dmcgrady/vim-lucario'
-Plug 'rakr/vim-one'
 Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 
