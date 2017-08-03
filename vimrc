@@ -12,11 +12,6 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'travisjeffery/vim-auto-mkdir'
 
-" Completion Framework
-Plug 'Shougo/neocomplete'
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-
 " Tmux Integration
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -70,8 +65,8 @@ Plug 'slime-lang/vim-slime-syntax'
 Plug 'tomlion/vim-solidity'
 
 "Note Taking
-Plug 'vim-scripts/utl.vim'
-Plug 'jceb/vim-orgmode'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 " Initialize plugin system
 call plug#end()

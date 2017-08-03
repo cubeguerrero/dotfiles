@@ -28,9 +28,6 @@ alias xem='mix ecto.migrate'
 alias xes='mix ecto.setup'
 alias xis='xdp && npm install && xec && xem && xes'
 
-## Quick Fix for npm install -g
-alias jasmine='$HOME/.asdf/installs/nodejs/8.1.1/.npm/bin/jasmine'
-
 # bash_completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
