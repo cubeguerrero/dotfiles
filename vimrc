@@ -17,7 +17,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'altercation/vim-colors-solarized'
-Plug 'itchyny/lightline.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Fuzzy File Finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -97,9 +99,6 @@ set fileencoding=utf-8
 set number
 set relativenumber
 
-" Set 80 line number
-set cc=80
-
 " Clipboard error in tmux
 set clipboard=unnamed
 
@@ -113,8 +112,8 @@ set hlsearch
 
 " Set colorscheme
 syntax enable
-colorscheme solarized
 set background=dark
+colorscheme base16-ocean
 
 " Configuration for Plugins
 " Ale
@@ -125,20 +124,36 @@ let g:ale_sign_warning = '⚠'
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 " Vim-JavaScript
-let g:jsx_ext_required = 0
+let g:jsx_ext_required=0
 
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ }
+" vim-airline
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
+let g:airline_powerline_fonts = 0
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.whitespace = 'Ξ'
+
+if g:airline_powerline_fonts == 1
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = ''
+else
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = '⎋'
+    let g:airline_symbols.readonly = '✖︎'
+    let g:airline_symbols.linenr = '␤'
+end
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 " Key Configuration
 let mapleader = ","
