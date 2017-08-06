@@ -28,6 +28,7 @@ Plug 'junegunn/fzf.vim'
 " Git Integration
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 
 " Editing
@@ -152,7 +153,7 @@ else
     let g:airline_symbols.readonly = '✖︎'
     let g:airline_symbols.linenr = '␤'
 end
-let g:airline_theme='solarized'
+let g:airline_theme='base16'
 let g:airline_solarized_bg='dark'
 
 " Key Configuration
@@ -187,3 +188,9 @@ nnoremap <Leader>fg :GFiles<cr>
 nnoremap <Leader>fG :GFiles?<cr>
 nnoremap <Leader>fc :Commits<cr>
 nnoremap <Leader>fs :Ag<SPACE>
+
+" vim fugitive
+nnoremap <Leader>gb :Gblame<cr>
+nnoremap <Leader>gc :Gcommit<SPACE>
+nnoremap <Leader>gd :Gdiff<cr>
+nnoremap <Leader>gs :Gstatus<cr>

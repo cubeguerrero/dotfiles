@@ -21,6 +21,9 @@ alias brewit='brew update && brew upgrade && brew doctor'
 alias pgstart='pg_ctl start'
 alias redisstart='redis-server --daemonize yes'
 
+## Use hub instead of git
+eval "$(hub alias -s)"
+
 ## Mix
 alias xdp='mix deps.get'
 alias xec='mix ecto.create'
