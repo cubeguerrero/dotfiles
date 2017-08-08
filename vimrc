@@ -17,6 +17,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Beautify
 Plug 'altercation/vim-colors-solarized'
+Plug 'raphamorim/lucario'
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -113,9 +114,8 @@ set hlsearch
 
 " Set colorscheme
 syntax enable
-set background=dark
-colorscheme base16-ocean
-
+set number
+colorscheme lucario
 " Configuration for Plugins
 " Ale
 let g:ale_lint_on_text_changed= 0
@@ -132,7 +132,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.whitespace = 'Ξ'
 
@@ -153,8 +153,7 @@ else
     let g:airline_symbols.readonly = '✖︎'
     let g:airline_symbols.linenr = '␤'
 end
-let g:airline_theme='base16'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='minimalist'
 
 " Key Configuration
 let mapleader = ","
@@ -194,3 +193,4 @@ nnoremap <Leader>gb :Gblame<cr>
 nnoremap <Leader>gc :Gcommit<SPACE>
 nnoremap <Leader>gd :Gdiff<cr>
 nnoremap <Leader>gs :Gstatus<cr>
+nnoremap <Leader>gg :Git<SPACE>
