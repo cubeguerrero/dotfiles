@@ -192,5 +192,7 @@ nnoremap <Leader>fs :Ag<SPACE>
 nnoremap <Leader>gb :Gblame<cr>
 nnoremap <Leader>gc :Gcommit<SPACE>
 nnoremap <Leader>gd :Gdiff<cr>
-nnoremap <Leader>gs :Gstatus<cr>
 nnoremap <Leader>gg :Git<SPACE>
+nnoremap <Leader>gs :Gstatus<cr>
+nnoremap <Leader>gpu :Gpush<cr>
+nnoremap <Leader>gpl :Gpull<cr>
