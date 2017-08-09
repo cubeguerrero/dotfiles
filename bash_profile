@@ -49,8 +49,8 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 ## Include Mix Escripts to Path
-if [ -d "$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts" ] ; then
-  PATH="$PATH:$HOME/.asdf/installs/elixir/1.4.4/.mix/escripts"
+if [ -d "$HOME/.asdf/installs/elixir/1.5.1/.mix/escripts" ] ; then
+  PATH="$PATH:$HOME/.asdf/installs/elixir/1.5.1/.mix/escripts"
 fi
 
 # Bash Git Prompt
