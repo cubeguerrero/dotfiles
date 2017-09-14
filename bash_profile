@@ -3,6 +3,7 @@ export CLICOLOR=1
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export NPM_PREFIX='npm get prefix'
+export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 
 
 ## This allows you to bookmark your favorite places across the file system
@@ -42,6 +43,11 @@ fi
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+# virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Mac OS X: ValueError: unknown locale: UTF-8 in Python
 # see: https://coderwall.com/p/-k_93g/mac-os-x-valueerror-unknown-locale-utf-8-in-python
