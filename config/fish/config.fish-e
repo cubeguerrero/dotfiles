@@ -1,0 +1,19 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+function __check_tmux_alias_fzf
+    if set -q TMUX
+        alias fzf='fzf-tmux'
+    else
+        alias fzf='fzf'
+    end
+end
+
+# rustup
+source "$HOME/.cargo/env.fish" # For fish
+
+__check_tmux_alias_fzf
+alias k="kubectl"
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/cguerrero/.ghcup/bin # ghcup-env

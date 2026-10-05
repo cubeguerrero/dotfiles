@@ -1,0 +1,29 @@
+# Ghostty Terminal Configuration
+# Documentation: https://ghostty.org/docs/config
+
+# Theme & Colors (matching Catppuccin Mocha from Zellij & Fish)
+theme = Catppuccin Mocha
+
+# Typography
+font-family = "CommitMono Nerd Font"
+font-size = 15
+
+# Window & Appearance
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden
+
+# macOS Keys & Integration
+# Enables Option key to act as Alt/Meta (essential for Zellij keybindings like Alt+n, Alt+h/j/k/l)
+macos-option-as-alt = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Behavior
+mouse-hide-while-typing = true
+shell-integration = fish
+shell-integration-features = sudo,title
